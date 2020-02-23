@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="16dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+
+            <EditText
+                android:id="@+id/fullnameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:layout_gravity="center"
+                android:text="FULL NAME"
+                tools:layout_editor_absoluteX="84dp"
+                tools:layout_editor_absoluteY="39dp">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/EmailTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:text="EMAIL"
+                tools:layout_editor_absoluteX="84dp"
+                tools:layout_editor_absoluteY="100dp">
+
+            </EditText>
+
+
+            <EditText
+                android:id="@+id/mobilenumberTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:text="MOBILE NUMBER"
+                tools:layout_editor_absoluteX="84dp"
+                tools:layout_editor_absoluteY="165dp">
+
+            </EditText>
+
+
+            <EditText
+                android:id="@+id/FAVMOVIETV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:text="FAV MOVIE/SERIES"
+                tools:layout_editor_absoluteX="84dp"
+                tools:layout_editor_absoluteY="230dp">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/feedbackTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textLongMessage"
+                android:text="FEEDBACK"
+                tools:layout_editor_absoluteX="84dp"
+                tools:layout_editor_absoluteY="295dp">
+
+            </EditText>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SUBMIT"
+                tools:layout_editor_absoluteX="140dp"
+                tools:layout_editor_absoluteY="375dp">
+
+            </Button>
+
+            <Spinner
+                android:id="@+id/selectedTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selected"></Spinner>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
